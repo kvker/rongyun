@@ -16,7 +16,6 @@ app.use(body_parser.json())
 
 const signAppKey = (nonce, timestamp) => {
   let base = app_secret + nonce + timestamp
-  console.log(base)
   return enc.Hex.stringify(SHA1(base))
 }
 
@@ -25,7 +24,6 @@ app.post('/api/token', async (req, res) => {
     let timestamp = new Date().getTime()
     let nonce = String(timestamp)
     let signature = signAppKey(nonce, timestamp)
-    console.log(signature)
     let ret = await axios({
       method: 'post',
       url: 'http://api-cn.ronghub.com/user/getToken.json',
@@ -39,7 +37,7 @@ app.post('/api/token', async (req, res) => {
       // 1: root, 2: test
       data: qs.stringify(req.body),
     })
-    console.log({ ret })
+    // console.log({ ret })
     res.json({
       code: 200,
       result: {
