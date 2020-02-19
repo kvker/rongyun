@@ -1,0 +1,122 @@
+body {
+  margin : 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* left */
+.navs {
+  width     : var(--main_size) - 1px;
+  height    : 100%;
+  background: #d8d8d8;
+}
+
+.navs button {
+  text-decoration: none;
+  width          : var(--main_size);
+  height         : var(--main_size);
+  background     : white;
+  border-radius  : calc(var(--main_size) / 2);
+  color          : #333;
+  margin-bottom  : var(--main_gap);
+}
+
+/* middle */
+.friend {
+  width: var(--main_length);
+}
+
+.box-top {
+  display         : flex;
+  justify-content : space-between;
+  padding         : 30px 12px 12px;
+  background-color: #f1f3f7;
+}
+
+.user {
+  height: var(--main_size);
+  width : var(--main_size);
+}
+
+.title {
+  height       : var(--main_size);
+  border-bottom: var(--border_line);
+}
+
+#contact_list {
+  flex      : 1;
+  overflow-y: scroll;
+}
+
+.contact-item {
+  display      : flex;
+  align-items  : center;
+  height       : 44px;
+  border-bottom: var(--border_line);
+  padding      : 0 var(--main_gap);
+}
+
+.highlight {
+  border: 2px solid red;
+}
+
+.avatar {
+  margin: 0 var(--main_gap);
+  width : calc(var(--main_size) / 2);
+  height: calc(var(--main_size) / 2);
+}
+
+.txt-add {
+  font-size: 14px;
+  color    : black;
+}
+
+.tab-bar {
+  position       : absolute;
+  bottom         : 28px;
+  width          : 100%;
+  display        : flex;
+  justify-content: space-around;
+  font-size      : 24px;
+}
+
+.left-tab-bar {
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  width           : 100px;
+  height          : 44px;
+  border          : var(--border_line);
+  border-radius   : 20px;
+  background-color: lightcyan;
+  box-shadow      : 0 0 20px #00000088;
+}
+
+/* chat box */
+.chat {
+  border-left: var(--border_line);
+}
+
+h3 {
+  border-bottom: var(--main_color);
+  height       : var(--main_size);
+  border-bottom: var(--border_line);
+}
+
+#chat_list {
+  padding   : var(--main_gap);
+  overflow-y: scroll;
+}
+
+#chat_textarea {
+  border-top: var(--border_line);
+}
+
+.send-btn {
+  position: absolute;
+  right   : 10px;
+  bottom  : 10px;
+}

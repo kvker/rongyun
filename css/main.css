@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin : 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding   : 0;
+}
+
+html {
+  --main_length: 200px;
+  --main_size  : 44px;
+  --main_gray  : #d8d8d8;
+  --main_gap   : 10px;
+  --main_color : green;
+  --main_radius: 8px;
+  --border_line: 1px solid #999;
+  color        : #333;
+  font-size    : 14px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+button,
+.button,
+input,
+textarea {
+  cursor : pointer;
+  outline: none;
+  resize: none;
+}
+
+input,
+textarea {
+  cursor: text;
+  padding: var(--main_gap);
+  border: 0;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+input {
+  padding: 0 var(--main_gap);
+}
+
+button {
+  margin          : 0;
+  padding         : 0;
+  background-color: transparent;
+}
+
+button:after {
+  border: none;
+}
+
+.button {
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  width           : 100%;
+  height          : var(--main_size);
+  border-radius   : calc(var(--main_size) / 2);
+  color           : white;
+  background-color: var(--main_color);
+}
+
+/* 方块 */
+.square {
+  width : var(--main_size);
+  height: var(--main_size);
+}
+
+/* 定位 */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top     : 0;
+  left    : 0;
+  width   : 100%;
+  height  : 100%;
+}
+
+.center {
+  left     : 50%;
+  transform: translateX(-50%);
+}
+
+/* 布局 */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display       : flex;
+  flex-direction: column;
+}
+
+.flex.jcfe,
+.flex-column.jcfe {
+  justify-content: flex-end;
+}
+
+
+.flex.jcsb,
+.flex-column.jcsb {
+  justify-content: space-between;
+}
+
+.flex.jcsa,
+.flex-column.jcsa {
+  justify-content: space-around;
+}
+
+.flex.jcse,
+.flex-column.jcse {
+  justify-content: space-evenly;
+}
+
+.flex.jcc,
+.flex-column.jcc {
+  justify-content: center;
+}
+
+.flex.aic,
+.flex-column.aic {
+  align-items: center;
+}
+
+.flex.aifs,
+.flex-column.aifs {
+  align-items: flex-start;
+}
+
+.flex.aife,
+.flex-column.aife {
+  align-items: flex-end;
+}
+
+.f1 {
+  flex: 1;
+}

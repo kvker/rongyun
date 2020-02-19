@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 40px;
+  background-image: url(../img/bg.jpg);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.cell {
+  margin-top: var(--main_gap);
+  color: white;
+  width: var(--main_length);
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: var(--main_size);
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
+  color: #333;
+}
+
+.name {
+  font-size: 20px;
+  color: white;
+}
+
+.login {
+  background-color: royalblue;
+  height: var(--main_size);
+  width: var(--main_length);
+  border-radius: 2px;
+  font-size: 14px;
+  color: white;
+  margin-top: var(--main_gap);
+}
+.regist {
+  margin-top: var(--main_gap);
+  color: white;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
