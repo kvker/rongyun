@@ -1,0 +1,29 @@
+{
+  "name": "rongyun",
+  "version": "1.0.0",
+  "description": "测试用户 root 与 test",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "crypto-js": "^4.0.0",
+    "express": "^4.17.1",
+    "qs": "^6.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvker/rongyun.git"
+  },
+  "keywords": [],
+  "author": "kvker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kvker/rongyun/issues"
+  },
+  "homepage": "https://github.com/kvker/rongyun#readme"
+}
